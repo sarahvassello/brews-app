@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('app');
 });
 
-Route::get('brews', 'BeerController@index');
-Route::post('brews', 'BeerController@create');
-Route::get('brews/{id}', 'BeerController@show');
-Route::put('brews/{id}', 'BeerController@update');
-Route::delete('brews/{id}', 'BeerController@destroy');
+Route::get('beers', 'BeerController@index');
+Route::post('beers', 'BeerController@create');
+Route::get('beers/{id}', 'BeerController@show');
+Route::put('beers/{id}', 'BeerController@update');
+Route::delete('beers/{id}', 'BeerController@destroy');
