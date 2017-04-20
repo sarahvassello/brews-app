@@ -8,6 +8,7 @@
     <input type="text" v-model="brewery" />
     <h3>ABV</h3>
     <input type="text" v-model="ABV" />
+    
     <button class="btn btn-primary" @click="create" >Add Beer</button>
   </div>
 </template>
@@ -17,7 +18,7 @@ import axios from 'axios';
 
 export default {
     components: {
-      
+
     },
 
     data () {
