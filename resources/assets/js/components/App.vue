@@ -50,7 +50,6 @@ export default {
     },
 
     update (data) {
-      // this.fetch();
       var i = this.beer.indexOf(data.beers);
       for (var d in data) {
         this.beers[i][d] = data[d];
@@ -58,7 +57,7 @@ export default {
     },
 
     remove (i) {
-      i = this.beers.indexOf(beer);
+      console.log(`App -> remove ID: ${i}`);
       this.beers.splice(i,1);
     }
   }

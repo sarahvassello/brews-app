@@ -57,7 +57,7 @@
           axios.delete(`/beers/${this.beer.id}`)
             .then((response) => {
               console.log('Beer -> remove success.');
-              this.emit$('deleted')
+              this.$emit('deleted')
               this.loading = false;
             })
             .catch((error) => {
@@ -68,15 +68,14 @@
         save () {
           console.log('Beer -> save');
           axios.put(`/beers/${this.beer.id}`, {
-            name: this.beer,
+            beer: this.beer,
             brewery: this.brewery,
             style: this.style,
             abv: this.ABV
           })
           .then((response) => {
             console.log('Beer -> save success');
-            this.emit$('updated', {
-              beers: this.beer,
+            this.$emit('updated', {
               name: this.beer,
               brewery: this.brewery,
               style: this.style,
