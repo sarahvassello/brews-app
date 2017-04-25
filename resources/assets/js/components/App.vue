@@ -13,11 +13,14 @@
 import axios from 'axios';
 import beerForm from './beerForm';
 import Beer from './Beer';
+import Loader from './Loader';
+
 
 export default {
     components: {
       Beer,
-      beerForm
+      beerForm,
+      Loader
     },
 
     data () {

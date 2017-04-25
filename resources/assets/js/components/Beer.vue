@@ -13,11 +13,11 @@
               <input type="text" v-model="name" />
               <input type="text" v-model="style" />
               <input type="text" v-model="brewery" />
-              <input type="text" v-model="abv" />
+              <input type="text" v-model="ABV" />
             </p>
             <p>
               <button class="btn btn-success" @click="save">Save</button>
-              <button class="btn btn-default" @click="cancel">Cancel</button>
+              <button class="btn btn-danger" @click="cancel">Cancel</button>
             </p>
         </div>
         </div>
@@ -30,7 +30,7 @@
 
   export default {
     props: [
-      'beer'
+      'beer',
     ],
 
     mounted () {
@@ -43,7 +43,7 @@
         name: this.beer.name,
         brewery: this.beer.brewery,
         style: this.beer.style,
-        abv: this.beer.ABV,
+        ABV: this.beer.ABV,
         editing: false,
         loading: false
       }
@@ -68,18 +68,18 @@
         save () {
           console.log('Beer -> save');
           axios.put(`/beers/${this.beer.id}`, {
-            beer: this.beer,
+            name: this.name,
             brewery: this.brewery,
             style: this.style,
-            abv: this.ABV
+            ABV: this.ABV
           })
           .then((response) => {
             console.log('Beer -> save success');
             this.$emit('updated', {
-              name: this.beer,
+              name: this.name,
               brewery: this.brewery,
               style: this.style,
-              abv: this.abv
+              ABV: this.ABV
             });
             this.editing = false;
           })
@@ -93,7 +93,7 @@
           this.name = this.beer.name;
           this.brewery = this.beer.brewery;
           this.style = this.beer.style;
-          this.abv = this.beer.ABV;
+          this.ABV = this.beer.ABV;
           this.editing = false;
       }
     }

@@ -12,7 +12,11 @@
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               </button>
-              <a class="navbar-brand" href="#">North Carolina Craft Brewers Guild</a>
+              <a class="navbar-brand" target="_ " href="https://ncbeer.org/">
+                <img src="/img/guild_logo.png" height="30" alt="guild logo">
+              </a>
+
+            <!-- <a class="navbar-brand" target="_ " href="https://ncbeer.org/">North Carolina Craft Brewers Guild</a> -->
             </div>
               <ul class="nav navbar-nav navbar-right">
                 <li>
