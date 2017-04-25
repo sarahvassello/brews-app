@@ -20,3 +20,6 @@ Route::post('beers', 'BeerController@create');
 Route::get('beers/{id}', 'BeerController@show');
 Route::put('beers/{id}', 'BeerController@update');
 Route::delete('beers/{id}', 'BeerController@destroy');
+Route::get('/style',  function () {
+    return view('style');
+});

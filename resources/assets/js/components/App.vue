@@ -1,9 +1,8 @@
 <template>
     <div class="container">
-    <h4>Beer App</h4>
-    <beerForm @created="fetch"></beerForm>
+      <beerForm @created="fetch"></beerForm>
       <div class="BeerList" v-show="beers.length > 0">
-        <Beer v-for="(beer, index) in beers" :key="index" :beer="beer"></Beer>
+        <Beer v-for="(beer, index) in beers" :key="index" :beer="beer" @deleted="remove(index)"></Beer>
       </div>
       <p v-show="beers.length === 0">You don't have any beers listed yet.</p>
     </div>
@@ -48,6 +47,19 @@ export default {
             console.log('App -> fetch error');
             this.loading = false;
           })
+    },
+
+    update (data) {
+      // this.fetch();
+      var i = this.beer.indexOf(data.beers);
+      for (var d in data) {
+        this.beers[i][d] = data[d];
+      }
+    },
+
+    remove (i) {
+      i = this.beers.indexOf(beer);
+      this.beers.splice(i,1);
     }
   }
 }
