@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div class="beerForm">
-      <div class="jumbotron">
       <h1>BEST OF NC BEER</h1>
         <h3>Representing the Southern State of Beer</h3>
         <p>
@@ -17,7 +16,6 @@
           North Carolina Craft Brewers Guild, and build your
            list below— your own personalized tour of North Carolina.
         </p>
-      </div>
       <center>
         <div class="row">
           <div class="col-md-2"></div>

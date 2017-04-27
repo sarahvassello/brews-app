@@ -42,7 +42,9 @@
        <script src="{{ mix('js/app.js') }}"></script>
 
        <footer>
-         Created by Sarah Vassello. Photo credit to NC Craft Brewers Guild.
+         Created by <a href="http://www.sarahmvassello.com/">Sarah Vassello </a> | <a href="https://github.com/sarahvassello">
+           <img src="img/github.png" alt="github logo" style="width:30px;height:30px">
+         </a> | Credit to <a href="http://www.ncbeer.org"> NC Craft Brewers Guild </a>
        </footer>
     </body>
 </html>
