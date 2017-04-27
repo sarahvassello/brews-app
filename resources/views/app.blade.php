@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,700|Oswald:600" rel="stylesheet">
         <title>NC Beer</title>
         <!-- navbar -->
           <nav class="navbar navbar-default">
@@ -30,6 +32,7 @@
     <body>
       <div id="app"></div>
 
+
       <script>
            window.Laravel = {!! json_encode([
                'csrfToken' => csrf_token(),
@@ -37,5 +40,47 @@
        </script>
        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
        <script src="{{ mix('js/app.js') }}"></script>
+
+       <footer>
+         Created by Sarah Vassello. Photo credit to NC Craft Brewers Guild.
+       </footer>
     </body>
 </html>
+
+<style>
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(img/ontap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #dfdfdf;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    color: #017EA9;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px black;
+  }
+
+  h3 {
+    color: #F16303;
+  }
+
+  a:hover {
+    color: #F16303;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    margin: 5px;
+    font-size: .75em;
+  }
+
+
+
+
+
+</style>

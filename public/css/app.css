@@ -1,4 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
+h1 {
+  font-size: 3.5em;
+  color: #017EA9;
+}
+
+h2 {
+  color: #F16303;
+}
 
 .box {
   float: left;
@@ -9,7 +20,7 @@
 }
 
 .blue {
-  background: blue;
+  background: #017EA9;
 }
 
 .gold {

@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-  <div class="beerForm">
-      <h1>Best of NC Beer</h1>
+    <div class="beerForm">
+      <div class="jumbotron">
+      <h1>BEST OF NC BEER</h1>
         <h3>Representing the Southern State of Beer</h3>
         <p>
           With over 200 craft breweries in North Carolina,
@@ -11,11 +12,12 @@
         </p>
         <p>
           While we can recommend the best beers for you to try,
-          why not make your own perfect list? Click here for
-          a list of all of the breweries who are part of the
+          why not make your own perfect list? Click <a target="_ " href="https://ncbeer.org/our-breweries/">here</a>
+          for an interactive list of all of the breweries that are part of the
           North Carolina Craft Brewers Guild, and build your
-          own list — your own personalized tour of North Carolina.
+           list below— your own personalized tour of North Carolina.
         </p>
+      </div>
       <center>
         <div class="row">
           <div class="col-md-2"></div>
@@ -42,23 +44,11 @@
       </div>
     </div>
     <p>
-    <button class="btn btn-primary" @click="create" >Add Beer</button>
+    <button class="btn btn-primary" @click="create" :disabled="loading" >Add Beer</button>
     </p>
-    <!--
-
-        <h3>Name</h3>
-        <input type="text" v-model="name">
-        <h3>Style</h3>
-        <input type="text" v-model="style" />
-      <h3>Brewery</h3>
-      <input type="text" v-model="brewery" />
-      <h3>ABV</h3>
-      <input type="text" v-model="ABV"  />
-
-  -->
-</center>
-</div>
-</div>
+      </center>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -105,12 +95,10 @@ export default {
           this.loading = false;
           this.reset();
           this.$emit('created');
-          if (this.success) {
-            alert ('hi');
-          }
+
         })
         .catch((error) => {
-          console.log('beerForm -> sendRequest error');
+          console.error('beerForm -> sendRequest error');
         });
       },
 
@@ -125,4 +113,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
