@@ -67,11 +67,11 @@
   }
 
   h3 {
-    color: #F16303;
+    color: #DF7F1C;
   }
 
   a:hover {
-    color: #F16303;
+    color: #DF7F1C;
     text-decoration: none;
   }
 
@@ -81,6 +81,48 @@
     font-size: .75em;
   }
 
+  #abv {
+    font-style: italic;
+  }
+
+  .thumbnail {
+    border: 3px solid #DF7F1C;
+  }
+
+  .btn-primary {
+    background-color: #017EA9;
+    border-radius: 0;
+    padding:15px;
+  }
+
+  .btn-primary:hover {
+    background-color: #DF7F1C;
+    border-color: white;
+  }
+
+  .btn-danger {
+    border-radius: 0;
+    padding:15px;
+    float: right;
+  }
+
+  .btn-success {
+    border-radius: 0;
+    padding:15px;
+    background-color: #DF7F1C;
+    border-color: white;
+  }
+
+  .btn-success:hover {
+    background-color: #cccccc;
+    border-color: white;
+  }
+
+  .btn-default {
+    border-radius: 0;
+    padding:15px;
+    float: right;
+  }
 
 
 

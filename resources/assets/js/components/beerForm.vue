@@ -16,6 +16,7 @@
           North Carolina Craft Brewers Guild, and build your
            list below— your own personalized tour of North Carolina.
         </p>
+      </div>
       <center>
         <div class="row">
           <div class="col-md-2"></div>

@@ -135,112 +135,112 @@
       </body>
 
 <style>
-body {
-  font-family: 'Roboto', sans-serif;
-}
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 
-h1 {
-  font-size: 3.5em;
-  color: #017EA9;
-}
+  h1 {
+    font-size: 3.5em;
+    color: #017EA9;
+  }
 
-h2 {
-  color: #F16303;
-}
+  h2 {
+    color: #F16303;
+  }
 
-.box {
-  float: left;
-  width: 50px;
-  height: 50px;
-  margin: 13px;
-  border: 1px solid rgba(0, 0, 0, .2);
-}
+  .box {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 13px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
 
-.blue {
-  background: #017EA9;
-}
+  .blue {
+    background: #017EA9;
+  }
 
-.gold {
-  background: #A48F16;
-}
+  .gold {
+    background: #A48F16;
+  }
 
-.cream {
-  background: #F1E7CD;
-}
+  .cream {
+    background: #F1E7CD;
+  }
 
-.orange {
-  background: #F16303;
-}
+  .orange {
+    background: #F16303;
+  }
 
-.red {
-  background: #712200;
-}
+  .red {
+    background: #712200;
+  }
 
-.white1 {
-  background: #FFFFFF;
-}
+  .white1 {
+    background: #FFFFFF;
+  }
 
-.white2 {
-  background: #F4F5F8;
-}
+  .white2 {
+    background: #F4F5F8;
+  }
 
-.white3 {
-  background: #dfdfdf;
-}
+  .white3 {
+    background: #dfdfdf;
+  }
 
-.white4{
-  background: #cccccc;
-}
+  .white4{
+    background: #cccccc;
+  }
 
-.white5 {
-  background: #000000;
-}
+  .white5 {
+    background: #000000;
+  }
 
-.center {
-  text-align: center;
-}
+  .center {
+    text-align: center;
+  }
 
-.light {
-  font-weight: 300;
-}
-/* buttons */
+  .light {
+    font-weight: 300;
+  }
+  /* buttons */
 
-.smallb {
-  color: white;
-  background-color: #F29D00;
-  border: none;
-  margin: 5px;
-}
+  .smallb {
+    color: white;
+    background-color: #F29D00;
+    border: none;
+    margin: 5px;
+  }
 
-.mediumb {
-  color: white;
-  background-color: #003463;
-  border: none;
-  padding: 10px;
-  margin: 5px;
-}
+  .mediumb {
+    color: white;
+    background-color: #003463;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+  }
 
-.largeb {
-  color: white;
-  background-color: #009BE3;
-  border: none;
-  padding: 20px;
-  margin: 5px;
-}
+  .largeb {
+    color: white;
+    background-color: #009BE3;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+  }
 
-.outline1 {
-  border-color: #009BE3;
-  background-color: white;
-  padding: 20px;
-  margin: 5px;
-}
+  .outline1 {
+    border-color: #009BE3;
+    background-color: white;
+    padding: 20px;
+    margin: 5px;
+  }
 
-.outline2 {
-  border-color: #003463;
-  background-color: white;
-  padding: 20px;
-  margin: 5px;
-}
+  .outline2 {
+    border-color: #003463;
+    background-color: white;
+    padding: 20px;
+    margin: 5px;
+  }
 
 
 </style>

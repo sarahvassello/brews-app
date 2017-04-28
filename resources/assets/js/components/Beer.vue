@@ -6,9 +6,11 @@
           <h3> {{ beer.name}} </h3>
             <h4> {{ beer.brewery}} </h4>
             <h5> {{beer.style }} </h5>
-            <h5> {{beer.ABV}} </h5>
-          <p><a href="#" class="btn btn-primary" role="button" @click.prevent="editing = true" v-show="!editing">Edit</a> <a href="#" class="btn btn-default" role="button" @click.prevent="remove" >Delete</a></p>
-          <div class="editing" v-show="editing">
+            <h5 id="abv"> {{beer.ABV}} </h5>
+            <p>
+              <a href="#" class="btn btn-primary" role="button" @click.prevent="editing = true" v-show="!editing">Edit</a>
+              <a href="#" class="btn btn-default" role="button" @click.prevent="remove" >Delete</a></p>
+              <div class="editing" v-show="editing">
             <p>
               <input type="text" v-model="name" />
               <input type="text" v-model="style" />
