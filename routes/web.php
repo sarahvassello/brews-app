@@ -11,15 +11,22 @@
 |
 */
 
+//app route
 Route::get('/', function () {
     return view('app');
 });
 
-Route::get('beers', 'BeerController@index');
-Route::post('beers', 'BeerController@create');
-Route::get('beers/{id}', 'BeerController@show');
-Route::put('beers/{id}', 'BeerController@update');
-Route::delete('beers/{id}', 'BeerController@destroy');
+//style Route
 Route::get('/style',  function () {
     return view('style');
 });
+
+
+//singular routes
+Route::get('beers/{id}', 'BeerController@show');
+Route::put('beers/{id}', 'BeerController@update');
+Route::delete('beers/{id}', 'BeerController@destroy');
+
+//collection routes
+Route::get('beers', 'BeerController@index');
+Route::post('beers', 'BeerController@create');

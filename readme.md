@@ -1,40 +1,34 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Best of NC Beer Tracker
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+With over 200 craft breweries in North Carolina, we're the southern state of beer. From popular Asheville staple Wicked Weed to Charlotte's NoDa Brewing to Wilmington's Front Street Brewery, the North Carolina Craft Brewers Guid is representing the mountains to coast of North Carolina beer.
 
-## About Laravel
+With so many excellent brews to choose from, why not create your own tour of North Carolina?
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+This API was built with Laravel framework, and uses the REST method — which allows you to create, post, put \(aka update\), and destroy entries from a data table via AJAX requests. The entries will be formatted as JSON data. While it may sound brew-tally awful to implement, it's anything but.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+REST functions:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+* Create: adds a new beer to your php data table.
+* Post: allows the user to view a beer \(or all beers, depending on the request\) in their data table.
+* Put: allows the user to edit a beer in their data table.
+* Destroy: deletes a beer in the data table. 
 
-## Learning Laravel
+And while it's essential to the best of the beer nerds to track their progress, it's important to remember not to stress out about this. There's hop\(e\) for you yet. This is ale in good fun. Cheers!
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+#### How to run on your machine:
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+* Download this repository
+* Download [Composer](https://getcomposer.org/doc/00-intro.md), a tool for dependency management
+* * This is how Laravel will be installed on your machine
+* Run MAMP application \(download [here](https://www.mamp.info/en/downloads/) if needed\)
+  * In Preferences -&gt; Ports, set Apache port to 8888, Nyginx port to 8888, and MySQL port to 8889
+  * In Web Server, set document root to the public folder of the repository 
+* Create a database named "app" in phpMyAdmin
+* Run Laravel command: php artisan migrate
+  * This will create database migrations for the tables
+* Open [http://localhost:8888/](http://localhost:8888/) in your web browser![](/assets/Screen Shot 2017-04-28 at 2.58.25 PM.png)
 
-## Contributing
+#### Link to my Gitbook:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+[https://sarahvassello.gitbooks.io/best-ncbeer-app/](https://sarahvassello.gitbooks.io/best-ncbeer-app/)
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
