@@ -114,7 +114,7 @@
   }
 
   .btn-success:hover {
-    background-color: #cccccc;
+    background-color: #F1E7CD;
     border-color: white;
   }
 

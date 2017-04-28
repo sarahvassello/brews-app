@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--google font -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,700|Oswald:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,200i,300,400,700|Oswald:600" rel="stylesheet">
         <title>Style</title>
         <!-- navbar -->
           <nav class="navbar navbar-default">
@@ -45,46 +45,54 @@
         </div>
         <div class="col-md-9">
           <div class="box blue"></div>
-          <div class="box gold"></div>
-          <div class="box cream"></div>
           <div class="box orange"></div>
+          <div class="box cream"></div>
+          <div class="box gold"></div>
           <div class="box red"></div>
-          <div class="box white1"></div>
-          <div class="box white2"></div>
-          <div class="box white3"></div>
-          <div class="box white4"></div>
-          <div class="box white5"></div>
         </div>
       </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+            <div class="col-md-9">
+              <div class="box white1"></div>
+              <div class="box white2"></div>
+              <div class="box white3"></div>
+              <div class="box white4"></div>
+              <div class="box white5"></div>
+            </div>
+          </div>
         <div class="row">
           <div class="col-md-3">
             <h2>Type</h2>
         </div>
         <div class="row col-md-6 ">
-        <h1> h1. Source Sans Pro, 3.5em </h1>
-        <h2> h2. Source Sans Pro, 2.5 em </h2>
-        <h3> h3. Source Sans Pro, bold </h3>
-        <h4> h4. Source Sans Pro </h4>
-        <h5> h5. Source Sans Pro, yellow </h5>
-        <h6> h6. Source Sans Pro</h6>
-        <p><p class="lead">This is paragraph text. It's the lead paragraph text, to be specific. </p><b>This is bold. </b>It is used to create paragraphs. Everyone likes paragraphs
-          because they are the best. They are so full of information. Please use paragraphs to communicate
-          in your everyday life and on web communications. This is Source Sans Pro. <p id="light">This is light.</p></p>
-          <ul><b>This is an unordered list.</b>
-            <li>Here's a point.</li>
-            <li>Here's another.</li>
-            <li>Good things always come in threes.</li>
-          </ul>
-            <ol><b>This is an ordered list.</b>
+          <h1> h1. Oswald, 3.5em </h1>
+          <h2> h2. Montserrat, 2em </h2>
+          <h3> h3. Montserrat, orange </h3>
+          <h4> h4. Montserrat </h4>
+          <h5> h5. Montserrat, bold </h5>
+          <h6> h6. Montserrat</h6>
+          <p><p class="lead">This is paragraph text. It's the lead paragraph text, to be specific. </p>
+          <b>This is bold. </b>It is used to create paragraphs. Everyone likes paragraphs
+            because they are the best. They are so full of information. Please use paragraphs to communicate
+            in your everyday life and on web communications. This is Montserrat.</p> <p id="light">This is light.</p>
+          <ul>
+            <b>This is an unordered list.</b>
               <li>Here's a point.</li>
               <li>Here's another.</li>
-              <li>I think we get it by now.</li>
+              <li>Good things always come in threes.</li>
+          </ul>
+            <ol>
+              <b>This is an ordered list.</b>
+                <li>Here's a point.</li>
+                <li>Here's another.</li>
+                <li>I think we get it by now.</li>
             </ol>
           </div>
         </div>
       <div class="row">
         <div class="col-md-3">
-        <h1>Buttons</h1>
+        <h2>Buttons</h2>
       </div>
       <div class="col-md-8">
         <button class="smallb">small button</button>
@@ -96,151 +104,197 @@
     </div>
       <div class="row">
         <div class="col-md-3">
-          <h1>Forms</h1>
-      </div>
+          <h2>Forms</h2>
+        </div>
       <div class="col-md-6">
         <div class="col-lg-6">
           <div class="form-group">
-            <label for="contact_last">Smaller Form</label>
-            <input class="form-control" type="text" name="last" id="contact_last" value="" placeholder="col-6" />
+            <label for="smaller_form">Smaller Form</label>
+            <input class="form-control" type="text" name="last" value="" placeholder="col-6" />
           </div>
         </div>
+        <div class="row">
         <div class="col-lg-12">
           <div class="form-group">
             <label for="contact_title">Large Form</label>
-            <input class="form-control" type="text" name="title" id="contact_title" value="" placeholder="col-12" />
+            <input class="form-control" type="text" name="title" value="" placeholder="col-12" />
           </div>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
-          <select>
-      <option value="one">One</option>
-      <option value="two">Two</option>
-      <option value="three">Three</option>
-      <option value="four">Four</option>
-    </select>
-    <p> This is a select form.</p>
+          <label for="text_imput">Text Input</label>
+            <form action="#">
+              <input type="text" name="text"><input type="submit" value="Submit">
+            </form>
         </div>
-        <div class="row">
-        <div class="col-md-6">
-          <form action="#">
-      Text input <input type="text" name="lname">
-      <input type="submit" value="Submit">
-    </form>
-        </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+      <label for="select_form">Select Form</label>
+        <select>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+          <option value="four">Four</option>
+        </select>
       </div>
     </div>
     </div>
     </div>
     </div>
       </body>
-
+      <footer>
+        <center>
+        Created by <a href="http://www.sarahmvassello.com/">Sarah Vassello </a> | <a href="https://github.com/sarahvassello">
+          <img src="img/github.png" alt="github logo" style="width:30px;height:30px">
+        </a> | Credit to <a href="http://www.ncbeer.org"> NC Craft Brewers Guild </a>
+      </center>
+      </footer>
 <style>
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
 
-  h1 {
-    font-size: 3.5em;
-    color: #017EA9;
-  }
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
 
-  h2 {
-    color: #F16303;
-  }
+    h1 {
+      font-size: 3.5em;
+      color: #017EA9;
+      font-family: 'Oswald', sans-serif;
+    }
 
-  .box {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin: 13px;
-    border: 1px solid rgba(0, 0, 0, .2);
-  }
+    h2 {
+      font-size: 2em;
+    }
 
-  .blue {
-    background: #017EA9;
-  }
+    h3 {
+      color: #DF7F1C;
+    }
 
-  .gold {
-    background: #A48F16;
-  }
+    h5 {
+      font-weight: bold;
+    }
 
-  .cream {
-    background: #F1E7CD;
-  }
+    .box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 13px;
+      border: 1px solid rgba(0, 0, 0, .2);
+    }
 
-  .orange {
-    background: #F16303;
-  }
+    .blue {
+      background: #017EA9;
+    }
 
-  .red {
-    background: #712200;
-  }
+    .gold {
+      background: #A48F16;
+    }
 
-  .white1 {
-    background: #FFFFFF;
-  }
+    .cream {
+      background: #F1E7CD;
+    }
 
-  .white2 {
-    background: #F4F5F8;
-  }
+    .orange {
+      background: #F16303;
+    }
 
-  .white3 {
-    background: #dfdfdf;
-  }
+    .red {
+      background: #712200;
+    }
 
-  .white4{
-    background: #cccccc;
-  }
+    .white1 {
+      background: #FFFFFF;
+    }
 
-  .white5 {
-    background: #000000;
-  }
+    .white2 {
+      background: #F4F5F8;
+    }
 
-  .center {
-    text-align: center;
-  }
+    .white3 {
+      background: #dfdfdf;
+    }
 
-  .light {
-    font-weight: 300;
-  }
-  /* buttons */
+    .white4{
+      background: #cccccc;
+    }
 
-  .smallb {
-    color: white;
-    background-color: #F29D00;
-    border: none;
-    margin: 5px;
-  }
+    .white5 {
+      background: #000000;
+    }
 
-  .mediumb {
-    color: white;
-    background-color: #003463;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-  }
+    .center {
+      text-align: center;
+    }
 
-  .largeb {
-    color: white;
-    background-color: #009BE3;
-    border: none;
-    padding: 20px;
-    margin: 5px;
-  }
+    .light {
+      font-weight: 100;
+    }
+    /* buttons */
 
-  .outline1 {
-    border-color: #009BE3;
-    background-color: white;
-    padding: 20px;
-    margin: 5px;
-  }
+    .smallb {
+      background-color: #017EA9;
+      border-radius: 0;
+      padding:5px;
+      margin-left: 5px;
+      border: white;
+      color: white;
+    }
 
-  .outline2 {
-    border-color: #003463;
-    background-color: white;
-    padding: 20px;
-    margin: 5px;
-  }
+    .smallb:hover {
+      background-color: #F1E7CD;
+      border-color: white;
+    }
+
+    .mediumb {
+      border-radius: 0;
+      padding:10px;
+      color: white;
+      background-color: #712200;
+      border: white;
+    }
+
+    .mediumb:hover {
+      background-color: #F1E7CD;
+      border-color: white;
+    }
+
+    .largeb {
+      border-radius: 0;
+      padding:15px;
+      background-color: #DF7F1C;
+      border-color: white;
+    }
+
+    .largeb:hover {
+      background-color: #F1E7CD;
+      border-color: white;
+    }
+
+    .outline1 {
+      border-color: #017EA9;
+      background-color: white;
+      padding: 20px;
+      margin: 5px;
+    }
+
+    .outline1:hover {
+      background-color: #017EA9;
+      border-color: white;
+    }
+
+    .outline2 {
+      border-color: #F16303;
+      background-color: white;
+      padding: 20px;
+      margin: 5px;
+    }
+
+    .outline2:hover {
+      background-color: #F16303;
+      border-color: white;
+    }
 
 
 </style>
